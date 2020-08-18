@@ -162,11 +162,13 @@ bindsym $mod+Ctrl+Shift+Up resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Down resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Left resize grow width 10 px or 10 ppt
 
+bindsym $mod+Print exec gnome-screenshot -i 
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
 #       tray_output primary
-# status_command i3status
+#       status_command i3status
 #}
 exec feh --bg-center '/home/jbgamond/Pictures/i3lock.png'
 exec xrandr --output VGA-1 --primary --right-of DP-1
